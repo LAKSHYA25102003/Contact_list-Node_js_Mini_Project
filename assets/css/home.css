@@ -1,0 +1,98 @@
+
+body{
+    margin: 0;
+    border:0;
+}
+#page-heading{
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+    margin: 25px;
+    padding: 8px;
+}
+#container{
+    width: 30%;
+    margin: auto;
+}
+.member{
+    background-color: rgba(0, 0, 255, 0.897);
+    color: white;
+    font-family: sans-serif;
+    border-bottom: white;
+    margin-bottom: 5px;
+    font-size: larger;
+    border-radius: 5px;
+    position:relative;
+}
+.name-container{
+    padding: 5px;
+    position: relative;
+}
+.name-container:hover{
+    background-color: rgb(38, 38, 116);
+    border-radius: 5px;
+}
+.mob-container{
+    padding: 5px;
+    position: relative;
+}
+.mob-container:hover{
+    background-color: rgb(38, 38, 116);
+    border-radius: 5px;
+}
+.name{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.mob{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+/* form */
+form{
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(180, 185, 185, 0.4);
+}
+#form-heading{
+    font-family: sans-serif;
+    text-align: center;
+}
+label{
+    font-family: sans-serif;
+    font-size: large;
+}
+input{
+    width: 30%;
+}
+input[type="number"]{
+    width: 40%;
+}
+
+
+#btn-container{
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+}
+.btn{
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+    margin: 10px;
+}
+#delete-btn-container{
+    margin: auto;
+    width: fit-content;
+}
+.delete-button{
+    display:flex ;
+    justify-content: flex-end;
+}
+.delete-button i{
+    color: red;
+}

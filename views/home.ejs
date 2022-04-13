@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- OUR css should be below  -->
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1 id="page-heading">
+            <i class="fa fa-address-book-o" aria-hidden="true"></i>
+            My Contact List</h1>
+        <div id="container">
+            <%for(let i of contact_list){%>
+                <div class="member">
+                    <div class="name-container"><span class="name-ask">Name</span><span class="name"><%=i.name%></span></div>
+                    <div class="mob-container"><span class="mob-ask">Mobile</span><span class="mob"><%=i.mob%></span></div>
+                    <div class="delete-button">
+                        <a href="/delete-contact/?id=<%=i._id%>">
+                            <i class="fa fa-window-close"></i>
+                        </a>
+                    </div>
+                </div>
+            <%}%>
+            <form action="/create-contact"  method="post">
+                <div id="form-heading">
+                    <h2>Create Contact</h2>
+                </div>
+                <span >
+                    <label for="form-name">Name:</label>
+                    <input type="text" name="name" id="form-name" placeholder="Enter Your Name" required>
+                </span>
+                <span >
+                    <label for="form-mobile">Mobile:</label>
+                    <input type="number" name="mobile" id="form-mobile" placeholder="Enter Mobile No" required>
+                </span>
+                <div id="btn-container"><button type="submit" class="btn">Add Contact to List</button></div>
+            </form>
+        </div>
+
+        <script src="/js/home.js"></script>
+    </body>
+</html>
